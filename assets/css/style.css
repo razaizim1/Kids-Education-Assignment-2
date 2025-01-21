@@ -7,6 +7,7 @@
     --color-primary: #FEA301;
     --color-secondary: #111;
     --color-white: #fff;
+    --color-para: #808080;
     --title-font: "Quicksand", serif;
     --body-font: "Raleway", serif;
 }
@@ -23,6 +24,7 @@ body {
     font-family: var(--title-font);
     font-size: 16px;
     font-weight: 400;
+    background: #F7F7F7;
 }
 
 ul {
@@ -60,6 +62,16 @@ img {
     background-color: var(--color-secondary);
 }
 
+.secondary-btn {
+    font-size: 15.091px;
+    font-weight: 700;
+    line-height: 28.296px;
+}
+
+.secondary-btn:hover {
+    color: var(--color-secondary) !important;
+}
+
 .orange-color {
     color: var(--color-primary);
 }
@@ -76,10 +88,59 @@ img {
     color: #5D58EF !important;
 }
 
+.light-blue {
+    color: #64C8FF !important;
+}
+
+.purple-color {
+    color: #8700FF !important;
+}
+
+.blue-bg {
+    border: 1px solid #DEF5FF;
+    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+
+.orange-bg {
+    border: 1px solid #FFF4DC;
+    background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+
+.purple-bg {
+    border: 1px solid #F2E8FF;
+    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+
 .d-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.section-padding {
+    padding-bottom: 60px;
+}
+
+.section-title {
+    color: var(--color-secondary);
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 57.5px;
+    margin-bottom: 80px;
 }
 
 /* header styles */
@@ -115,6 +176,7 @@ img {
 /* Hero Section Styles */
 .hero-section {
     margin-top: 120px;
+    padding-bottom: 60px;
 }
 
 .hero-title {
@@ -141,13 +203,80 @@ img {
     background-color: var(--color-primary);
 }
 
+/* Service Section Style */
+
+.service-card {
+    border-radius: 18.864px;
+    padding: 52px 40px;
+}
+
+.service-card img {
+    padding-bottom: 20px;
+}
+
+.service-title {
+    color: var(--color-secondary);
+    font-size: 24.523px;
+    font-weight: 700;
+    line-height: 30.654px;
+    padding-bottom: 21px;
+}
+
+.service-desc {
+    color: var(--color-para);
+    font-family: var(--body-font);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28.296px;
+    margin-bottom: 20px;
+}
+
+.service-navigation a {
+    border-radius: 30px;
+    background: var(--Orange, #FEA301);
+    height: 60px;
+    width: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.service-navigation {
+    margin-top: 80px;
+}
+
+.service-navigation a:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Our Stories Styles */
+.stories-section {
+    background: linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%),
+        url('/assets/images/bg.png') no-repeat center center / cover,
+        lightgray;
+    padding: 60px 0;
+}
+
+.stories-card-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.stories-card-wrapper .stories-card:first-child {
+    grid-row: 1 / 4;
+}
+
+
 /* Responsive Styles */
 @media only screen and (max-width: 576px) {
 
     /* Navbar Styles */
     .header-logo-wrapper .text,
     .header-menu,
-    .header-btn {
+    .header-btn,
+    .service-navigation {
         display: none;
     }
 
@@ -183,6 +312,7 @@ img {
 
     .hero-title {
         font-size: 32px;
+        line-height: normal;
     }
 
     .hero-description {
@@ -194,6 +324,16 @@ img {
         font-size: 16px;
         font-weight: 700;
         padding: 12px 24px;
+    }
+
+    /* Service Section Styles */
+    .service-card-wrapper.d-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .section-title {
+        margin-bottom: 20px;
     }
 
 }
