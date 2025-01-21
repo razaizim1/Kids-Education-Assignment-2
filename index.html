@@ -10,6 +10,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -17,16 +21,16 @@
 
     <!-- START HEADER SECTION -->
     <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="header-logo-wrapper">
+        <div class="nav container">
+            <nav class="navbar d-flex">
+                <a href="#" class="header-logo-wrapper d-flex">
                     <div class="logo">
                         <img src="assets/images/logo.png" alt="School-logo">
                     </div>
                     <h1 class="text">School</h1>
                 </a>
                 <div class="header-menu">
-                    <ul>
+                    <ul class="d-flex">
                         <li><a href="#">Home</a></li>
                         <li><a href="#" class="blue-color">About</a></li>
                         <li><a href="#" class="cyan-blue">Facilities</a></li>
@@ -36,8 +40,31 @@
                 <div class="header-btn">
                     <a href="#" class="theme-btn">Contact</a>
                 </div>
+                <div class="menubar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </nav>
         </div>
+
+
+        <!-- START HERO SECTION -->
+        <div class="hero-section">
+            <div class="container d-flex">
+                <div class="hero-content">
+                    <h1 class="hero-title"><span class="orange-color">Empowering</span><br>
+                        students from small <br> age <span class="blue-color">towards vision</span></h1>
+                    <p class="hero-description">With the courage, Confidence, Creativity and Compassion to make their
+                        Unique Contribution in a
+                        Diverse and Dynamic World.</p>
+                    <a href="#" class="theme-btn">Enroll Now</a>
+                </div>
+                <div class="hero-img">
+                    <img src="assets/images/hero-kids.png" alt="Hero Kids">
+                </div>
+            </div>
+        </div>
+
+        <!-- END HERO SECTION -->
     </header>
     <!-- END HEADER SECTION -->
 </body>

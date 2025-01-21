@@ -45,6 +45,7 @@ img {
 }
 
 .theme-btn {
+    display: inline-block;
     color: var(--color-white);
     font-family: var(--title-font);
     font-size: 20px;
@@ -55,8 +56,12 @@ img {
     border-radius: 12px;
 }
 
-.theme-btn:hover{
+.theme-btn:hover {
     background-color: var(--color-secondary);
+}
+
+.orange-color {
+    color: var(--color-primary);
 }
 
 .blue-color {
@@ -71,17 +76,15 @@ img {
     color: #5D58EF !important;
 }
 
-/* header styles */
-.header {
-    margin-top: 20px;
-}
-
-.navbar,
-.header-menu ul,
-.header-logo-wrapper {
+.d-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* header styles */
+.header {
+    margin-top: 20px;
 }
 
 .header-logo-wrapper .text {
@@ -100,6 +103,97 @@ img {
     margin-right: 32px;
 }
 
-.header-menu ul li a:hover{
+.header-menu ul li a:hover {
     color: var(--color-secondary) !important;
+}
+
+.menubar {
+    display: none;
+    font-size: 30px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    margin-top: 120px;
+}
+
+.hero-title {
+    color: var(--color-secondary);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    margin-bottom: 15px;
+}
+
+.hero-description {
+    color: var(--color-secondary);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.hero-section .theme-btn {
+    background-color: var(--color-secondary);
+}
+
+.hero-section .theme-btn:hover {
+    background-color: var(--color-primary);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 576px) {
+
+    /* Navbar Styles */
+    .header-logo-wrapper .text,
+    .header-menu,
+    .header-btn {
+        display: none;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header .nav.container {
+        border-bottom: 1px solid var(--color-primary);
+        padding-bottom: 15px;
+    }
+
+    /* Hero Section Styles */
+    .hero-section {
+        margin-top: 40px;
+    }
+
+    .hero-img {
+        margin-bottom: 20px;
+    }
+
+    .hero-section .d-flex {
+        flex-direction: column-reverse;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .theme-btn {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 12px 24px;
+    }
+
 }
