@@ -511,24 +511,9 @@ img {
     }
 
     .header .nav.container {
-        border-bottom: 1px solid var(--color-primary);
-        padding-bottom: 15px;
+        border: 1px solid var(--color-primary);
+        padding: 15px;
     }
-
-    /* Hero Section Styles */
-    /* 
-    .hero-section .container {
-
-        grid-template-columns: 1fr;
-    }
-
-    .hero-section .container .hero-content:first-child {
-        grid-area: b;
-    }
-
-    .hero-section .container .hero-content:last-child {
-        grid-area: a;
-    } */
 
     .hero-section {
         margin-top: 40px;
